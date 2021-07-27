@@ -2,12 +2,9 @@
 target = "riscv32imc-unknown-none-elf"
 
 [target.riscv32imc-unknown-none-elf]
-runner = 'riscv32-unknown-elf-gdb'
 rustflags = [
-  "-C", "link-arg=-Tmemory.x",
-  "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=-Tulp_link.x",
 ]
 
 [unstable]
-build-std = ["core"] #, "panic_abort"]
-#build-std-features = ["panic_immediate_abort"]
+build-std = ["core"]
