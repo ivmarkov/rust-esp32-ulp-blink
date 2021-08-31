@@ -1,13 +1,13 @@
 [package]
 name = "rust-esp32-ulp-hello"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["ivmarkov"]
 edition = "2018"
 categories = ["embedded", "hardware-support"]
 keywords = ["embedded", "ulp", "esp32s2", "riscv"]
 description = "A demo binary crate for the ESP32-S2 ULP RISCV chip that blinks a LED via a \"mini\"-GPIO HAL and communicates with the main processor"
 repository = "https://github.com/ivmarkov/rust-esp32-ulp-hello"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 readme = "README.md"
 
 [profile.release]
