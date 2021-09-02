@@ -1,6 +1,6 @@
 [package]
 name = "rust-esp32-ulp-hello"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["ivmarkov"]
 edition = "2018"
 categories = ["embedded", "hardware-support"]

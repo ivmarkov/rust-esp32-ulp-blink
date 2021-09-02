@@ -20,22 +20,22 @@ fn main() {
 
     while get_cycles() > 0 {
         led.set_high().unwrap();
-        delay.delay_ms(1000 as u32);
+        delay.delay_ms(1000_u32);
 
         led.set_low().unwrap();
-        delay.delay_ms(1000 as u32);
+        delay.delay_ms(1000_u32);
 
         decr_cycles();
     }
 }
 
 fn get_cycles() -> u32 {
-    unsafe { core::ptr::read_volatile(&mut CYCLES) }
+    unsafe { core::ptr::read_volatile(&CYCLES) }
 }
 
 fn decr_cycles() {
     unsafe {
-        let cycles = core::ptr::read_volatile(&mut CYCLES);
+        let cycles = core::ptr::read_volatile(&CYCLES);
 
         if cycles > 0 {
             core::ptr::write_volatile(&mut CYCLES, cycles - 1);
