@@ -1,6 +1,6 @@
 [package]
 name = "rust-esp32-ulp-hello"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["ivmarkov"]
 edition = "2018"
 categories = ["embedded", "hardware-support"]
@@ -20,4 +20,4 @@ opt-level = "s"
 
 [dependencies]
 panic-halt = "0.2"
-esp-idf-hal = {version = "0.17", features = ["ulp"], default-features = false }
+esp-idf-hal = {version = "0.21", features = ["ulp"], default-features = false }
