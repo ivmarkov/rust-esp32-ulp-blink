@@ -1,4 +1,4 @@
-# Rust on the ESP32-S2 RISC-V ULP "Hello, World" app
+# Rust on the ESP32-S2 RISC-V ULP - a "Blinking LED" app
 
 **Work in progress**
 
