@@ -1,8 +1,9 @@
 [package]
 name = "rust-esp32-ulp-blink"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["ivmarkov"]
 edition = "2018"
+resolver = "2"
 categories = ["embedded", "hardware-support"]
 keywords = ["embedded", "ulp", "esp32s2", "riscv"]
 description = "A demo binary crate for the ESP32-S2 ULP RISCV chip that blinks a LED via a \"mini\"-GPIO HAL and communicates with the main processor"
@@ -20,4 +21,4 @@ opt-level = "s"
 
 [dependencies]
 panic-halt = "0.2"
-esp-idf-hal = {version = "0.21", features = ["ulp"], default-features = false }
+esp-idf-hal = {version = "0.24.3", features = ["ulp"], default-features = false }
