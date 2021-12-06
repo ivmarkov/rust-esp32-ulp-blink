@@ -27,6 +27,6 @@ jobs:
       - name: Build | Fmt Check
         run: cargo fmt -- --check
       - name: Build | Clippy
-        run: cargo clippy --no-deps --target riscv32imc-esp-espidf -- -Dwarnings
+        run: cargo clippy --no-deps -- -Dwarnings
       - name: Build | Compile
-        run: cargo build --target riscv32imc-esp-espidf
+        run: cargo build
