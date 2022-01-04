@@ -20,4 +20,4 @@ opt-level = "z"
 
 [dependencies]
 panic-halt = "0.2"
-esp-idf-hal = {version = "0.29.1", features = ["ulp"], default-features = false }
+esp-idf-hal = {version = "0.31", features = ["ulp"], default-features = false }
