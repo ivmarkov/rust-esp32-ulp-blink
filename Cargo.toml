@@ -20,4 +20,5 @@ opt-level = "z"
 
 [dependencies]
 panic-halt = "0.2"
+embedded-hal = "0.2"
 esp-idf-hal = {version = "0.32", features = ["ulp"], default-features = false }

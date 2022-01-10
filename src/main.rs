@@ -2,6 +2,8 @@
 #![no_main]
 #![feature(core_intrinsics, start)]
 
+use embedded_hal::delay::blocking::DelayUs;
+
 use esp_idf_hal::delay;
 use esp_idf_hal::prelude::*;
 
