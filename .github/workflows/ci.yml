@@ -29,4 +29,4 @@ jobs:
       - name: Build | Clippy
         run: cargo clippy --no-deps -- -Dwarnings
       - name: Build | Compile
-        run: cargo build --release
+        run: cargo build
