@@ -1,6 +1,6 @@
 [package]
 name = "rust-esp32-ulp-blink"
-version = "0.5.0"
+version = "0.5.1"
 authors = ["ivmarkov"]
 edition = "2018"
 resolver = "2"
@@ -21,4 +21,4 @@ opt-level = "z"
 [dependencies]
 panic-halt = "0.2"
 embedded-hal = "0.2"
-esp-idf-hal = {version = "0.32.2", features = ["ulp"], default-features = false }
+esp-idf-hal = {version = "0.32.4", features = ["riscv-ulp-hal"], default-features = false }
